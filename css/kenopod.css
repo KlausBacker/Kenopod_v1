@@ -1,0 +1,332 @@
+@charset "utf-8";
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Amatic SC', cursive;*/
+*{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: #333;
+}
+body{
+min-height: 100%;
+	margin:0;
+  padding:0;
+  background: url(../img/background/grass_background2-min.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+header{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	max-height: 50px;
+	box-shadow: 0 10px 10px;
+	background: rgb(40,4,65);
+background: -moz-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: -webkit-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280441",endColorstr="#3b2404",GradientType=1);
+
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+}
+
+/*  Titre et texte */
+.titre{
+
+}
+.titre h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	color: #B548B0;
+}
+.titre p{
+  width: auto;
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	color: #FFC1FF;
+	text-align: center;
+
+}
+
+/* Menu */
+.menu{
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+.menu .ico{
+	margin: 20px;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	transition: .1s;
+}
+
+.menu .ico:hover{
+	width: 40px;
+	height: 40px;
+}
+/* Nom utilisateur et deconnexion */
+
+
+/* Container principale */
+#container{
+	width: 100%;
+ 	margin-bottom: 100px;
+  display: flex;
+	flex-wrap: wrap;
+	
+	max-width: calc(300px * 4);
+	margin: auto;
+	text-align: center;
+background: rgb(40,4,65);
+background: -moz-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: -webkit-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280441",endColorstr="#3b2404",GradientType=1);
+}
+
+/*  Page de Login  */
+.contlogin{
+	
+}
+.bouton{
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.bouton .connexion, .inscription, .annuler, .valider, .parcourir {
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	background-color: #B548B0;
+	border-radius: 10px;
+	font-size: 22px;
+	font-weight: 700
+}
+
+
+/* Page d'Index  */
+.contindex, .contajouter, .contmodifier, .contdetail, .contrecherche {
+	top: 150px;
+	min-height: 350px;
+}
+.contindex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contindex .noTrouvaille{
+	 width: 100%;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	color: #FFC1FF;
+	text-align: center;
+}
+/* Bloc Trouvaille Index  */
+.blocTrouvaille{
+max-width: 300px;
+	margin: 10px 10px 20px 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 2px #DDD;
+	background: url(../img/background/oldPaper_background1.jpg);
+}
+.blocTrouvaille .date{
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.blocTrouvaille .genre{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+}
+.blocTrouvaille .nom{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Acme', sans-serif;
+}
+.blocTrouvaille img{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.blocTrouvaille .icon{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	cursor: pointer;
+	padding: 3px;
+		border-radius: 8px;
+		background: rgb(40,4,65);
+background: -moz-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(9,130,17,0.3225665266106442) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: -webkit-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(9,130,17,0.3225665266106442) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+background: linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(9,130,17,0.3225665266106442) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280441",endColorstr="#3b2404",GradientType=1);
+}
+.blocTrouvaille .icon .ico{
+	width: 28px;
+	height: 28px;
+	transition: .1s;
+}
+.blocTrouvaille .icon .ico:hover{
+	width: 30px;
+	height: 30px;
+}
+
+/*  Formulaire d'ajout et modif */
+#container h2{
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+	color: #FFB61F;
+}
+.item label{
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	color: #FFB61F;
+}
+input, select{
+	margin: 5px;
+	padding: 2px;
+	font-size: 16px;
+}
+input[type="submit"]{
+	font-weight: bold;
+}
+
+/* Page de detail */
+#detailTrouvaille{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 10px 10px 10px;
+}
+#detailTrouvaille label{
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+	color: #FFB61F;
+}
+#detailTrouvaille img{
+	margin: 0 50px 0 0;
+	width: 250px;
+	height: 250px;
+	object-fit: contain;
+}
+#detailTrouvaille .date{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+	color: #FFC1FF;
+}
+#detailTrouvaille .genre{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	color: #FFC1FF;
+}
+#detailTrouvaille .nom{
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Acme', sans-serif;
+	color: #FFC1FF;
+}
+#detailTrouvaille .commentaire{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Merienda', cursive;
+	color: #FFC1FF;
+}
+#detailTrouvaille .description{
+	text-align: left;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	color: #FFC1FF;
+	padding: 20px;
+}
+
+/*  Formulaires  */
+form{
+	width: 50%;
+	margin: 20px 10px 10px 0;
+}
+form div.item{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+form label{
+	min-width: 150px;
+	margin: 5px;
+	padding: 2px;
+	font-weight: bold;
+}
+form #photo{
+	display: none;
+}
+#vignette{
+	width: 225px; /* Utile entre TD#12 et TD#14. */
+	height: 225px; /* Utile entre TD#12 et TD#14. */
+	padding: 3px;
+	border: dashed 2px #ccc;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: content-box;
+	background-size: contain;
+}
+
+.vignette .ico{
+	z-index: 1;
+	width: 36px;
+	height: 36px;
+	transition: .1s;
+}
+
+.vignette .ico:hover{
+	width: 40px;
+	height: 40px;
+}
+
+#map {
+	margin: 8px;
+	width:300px;
+	height: 250px;
+	background-color: grey;
+}
+
+.erreur{
+	width: 100%;
+	margin: 0 0 0 10px;
+	color: red;
+}
+footer{
+	height: 50px;
+	margin-top: 200px;
+  margin-bottom: 0px;
+	width: 100%;
+	background: rgb(40,4,65);
+	background: -moz-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+	background: linear-gradient(90deg, rgba(40,4,65,0.23573179271708689) 0%, rgba(60,4,4,0.23573179271708689) 50%, rgba(59,36,4,0.20772058823529416) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280441",endColorstr="#3b2404",GradientType=1);
+	text-align: center;
+}
+footer:after{
+	content: "# Kenopod 2018 - Nicolas Boulanger";
+	width: auto;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	color: #FFC1FF;
+
+}
